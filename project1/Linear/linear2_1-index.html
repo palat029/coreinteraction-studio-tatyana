@@ -1,0 +1,53 @@
+<doctype html>
+<head>
+	<title>BuzzFeed Linear</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="block">
+		<div class="container">
+			<div class="content A"> <a href="linear2_2-index.html">
+				<span>B</span>
+				<span>u</span>
+				<span>z</span>
+				<span>z</span>
+				<span>F</span>
+				<span>e</span>
+				<span>e</span>
+				<span>d</span>
+			</a>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+
+
+
+<!-- JAVASCRIPT TO HAVE LETTERS CHANGE COLORS SEPARATLEY -->
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js">
+</script>
+<script>
+$(document).ready(function()
+{
+    $("span").hover(function(e)
+    {
+        var randomClass = getRandomClass();
+        $(e.target).attr("class", randomClass);
+    });
+});
+
+function getRandomClass()
+{
+    //Store available css classes
+    var classes = new Array("ice", "purple", "teal", "violet", "pink","mint","lime","lemon");
+    
+    //Give a random number from 0 to 5
+    var randomNumber = Math.floor(Math.random()*10);
+    
+    return classes[randomNumber];
+}
+</script>
+

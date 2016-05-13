@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: arial;
+  background-color: lightgray;
+}
+/*@font-face{
+    font-family: ;
+    src: url('.ttf');
+  }*/
+
+
+
+.is-hidden { opacity: 0 ; }
+
+/* When heights is put to 100vh or % it stops the user
+from sending and recieving messages*/
+.username-form {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+ /* height:100vh;*/
+  padding: 20px;
+  background-color: rgba(255,255,255,.8);
+  box-shadow: 0 0 20px rgba(0,0,0,.125);
+
+  transition: opacity .2s;
+}
+
+.username-form label {
+
+  display: block;
+  margin-bottom: 10px;
+}
+.submit-button{
+  border-radius: 40px/30px;
+  border:2px solid gray;
+  background: none;
+
+}
+
+
+.shape-area{
+
+  right:0;
+  left:0;
+  bottom:0;
+  width: 100vw;
+  height: 20%;
+  background: white; 
+  border:5px solid gray;
+  position:fixed;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+.shape-input {
+  width:1840px;
+  height:100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y:hidden;
+  overflow-x:scroll;
+  background: white;
+  display: flex;
+}
+
+.shape-options {
+  display: flex;
+  align-items: center;
+}
+
+.shape-options-label {
+  padding: 5px;
+}
+
+.shape-option {
+  width: 800px;
+  height: 800px;
+  transition: opacity .2s;
+  margin:10px;
+}
+
+.shape-option:hover {
+  opacity: .7;
+}
+
+
+.option-0 {
+  width: 90px;
+  height:90px;
+  background: white;
+  border-radius: 50px;
+  border:3px solid gray;
+}
+.option-1 {
+  width: 20px;
+  height:20px;
+  background: none;
+  border-radius: 50px;
+  border:3px solid gray;
+}
+.option-2 {
+  width: 50px;
+  height:50px;
+  background: none;
+  border:3px solid gray;
+
+}
+.option-3 {
+  width: 60px;
+  height:100px;
+  background: none;
+  border:3px solid gray;
+}
+.option-4 {
+  width: 130px;
+  height:80px;
+  border-radius: 100px/70px;
+  border:3px solid gray;
+}
+.option-5 {
+  width: 50px;
+  height:50px;
+  background: none;
+  border:3px solid gray;
+  transform:rotate(50deg);
+}
+.option-6 {
+  width: 60px;
+  height:100px;
+  background: none;
+  border:3px solid gray;
+  border-radius: 20px;
+}
+.option-7 {
+ margin:23px;
+  width: 60px;
+  height:100px;
+  background: none;
+  border:3px solid gray;
+  transform: rotate(50deg);
+
+}
+.option-8 {
+  margin:35px;
+  width: 60px;
+  height:100px;
+  background: none;
+  border:3px solid gray;
+  transform: rotate(140deg);
+
+}
+.option-9 {
+  width: 100px;
+  height:0;
+  border-left: 40px solid transparent;
+  border-bottom: 60px solid black;
+}
+.option-10 {
+  width: 100px;
+  height:0;
+  border-left: 40px solid gray;
+  border-bottom: 60px solid black;
+
+}
+.option-11 {
+  width: 100px;
+  height:0;
+  border-right: 40px solid transparent;
+  border-bottom: 60px solid black;
+
+}
+.option-12 {
+  width: 100px;
+  height:0;
+  border-right: 40px solid transparent;
+  border-bottom: 60px solid white;
+
+}
+
+
+
+/*.message {
+  padding: 40px;
+/*  margin-right: 40px;
+}*/
+
+
+/*messages that send, but when put 
+in inline-block and with a negative margin-top 
+it stops at certain point */
+
+
+.option-0.message{
+  width: 200px;
+  height:200px;
+  border-radius: 100px;
+  margin-right: 0;
+  margin-left:60px;
+  border:none;
+}
+.option-1.message{
+ /* display: inline-block;*/
+  margin-top:-90px;
+  margin-right:0;
+  margin-left:0;
+  margin-bottom:0;
+  border:none;
+}
+
+.option-2.message{
+  margin-right: 0;
+  margin-left: 100px;
+  left:90px;
+  border:none;
+}
+.option-3.message{
+  margin-left:140px;
+  margin-top: 100px;
+  border:none;
+}
+.option-4.message{
+  margin-left:190px;
+  margin-top: 0px;
+  border:none;
+}
+.option-5.message{
+  margin-left:20px;
+  /*margin-top: 90px;*/
+  border:none;
+}
+.option-6.message{
+  margin-left:20px;
+  /*margin-top: 90px;*/
+  border:none;
+}
+.option-7.message{
+  margin-left:50px;
+  margin-top: -90px;
+  border:none;
+}
+.option-8.message{
+  margin-left:180px;
+  margin-top: -90px;
+  border:none;
+}
+.option-9.message{
+  margin-left:100px;
+  margin-top: -30px;
+  border:none;
+}
+.option-10.message{
+ margin-left:60px;
+  margin-top: -90px;
+ /* border:none;*/
+}
+.option-11.message{
+  margin-left:130px;
+  margin-top: 50px;
+/*  border:none;*/
+}
+.option-12.message{
+ margin-left:130px;
+  margin-top: 60px;
+ /* border:none;*/
+}
+.message-container{
+  background-color:lightgray;
+  position:fixed;
+  overflow:scroll;
+  width:100%;
+  top:0;
+  left:25%;
+  right:0;
+  bottom:20%;
+}
+
+
+
+/*.message.from-current-user {
+  text-align: right;
+  margin-right: 0;
+  margin-left: 40px;*/
+}

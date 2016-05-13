@@ -1,0 +1,34 @@
+<doctype html>
+<head>
+	<title>BuzzFeed Linear</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="block B">
+		<div class="container B">
+
+			<div id="wrap">
+				<div id="content-E"><a href="linear2_1-index.html">Thank you</a></div>
+				<div id="text-D">
+				Thank you. It is such a privilege for us to work with all of you, and we are looking forward to everything we can accomplish together in the years to come.
+			</div>
+			</div>
+		</div>		
+	</div>		
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js">
+</script>
+<script>
+$ (document).ready(function(){
+  $("#wrap").mouseover(function(){
+   $("#text-D").stop().slideDown("slow");
+  });
+  $("#wrap").mouseout(function(){
+   $("#text-D").slideUp("slow");
+  });
+ });
+</script>
+
+
+

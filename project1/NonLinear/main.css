@@ -1,0 +1,269 @@
+.container{
+	/*background-color: rgb(190,190,190);*/
+	background-color: white;
+	width:100%;
+	height:150%;
+	text-align: center;
+	position: absolute;
+	
+}
+.content{
+	top:0;
+	margin: 20 10px;
+	position: relative;
+	display: inline-block;
+	background-color: rgb(255,222,0);
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	text-align: center;
+}
+.content:hover {
+	background-color: rgb(237,28,36);
+	color:white;
+}
+.content:hover a,
+.text a:hover {
+	text-decoration: none;
+	color:white;
+}
+.text a{
+	text-decoration: none;
+	color:black;
+}
+.text{
+	margin-top: 160px;
+	font-weight: bold;
+	top:-120px;
+	position: relative;
+	font-family: helvetica;
+	font-size: 80pt;
+	-webkit-transform: rotate(-45deg);
+}
+.text3 a{
+	text-decoration: none;
+	color:black;
+}
+.text3 a:hover{
+	text-decoration: none;
+	color:white;
+}
+.text3{
+	margin-top: 206px;
+	font-weight: bold;
+	top:-150px;
+	position: relative;
+	font-family: helvetica;
+	font-size: 50pt;
+	-webkit-transform: rotate(-45deg);
+}
+.text.set span{
+	margin-top: -20px;
+	margin-left:90px;
+	display: block;
+	font-size:25pt;
+	text-align: left;
+}
+.text.set-2 span{
+	margin-top: -10px;
+	margin-left:60px;
+	display: block;
+	font-size:20pt;
+	text-align: left;
+}
+.text3.set-3 span{
+	margin-top: -10px;
+	margin-left:60px;
+	display: block;
+	font-size:20pt;
+	text-align: left;
+}
+
+
+/*separate sites*/
+	.containerbox{
+		top:10%;
+		left:10%;
+		background-color: yellow;
+		width: 80%;
+		height:80%;
+		text-align: center;
+		position:absolute;
+	}
+	.textbox a{
+		text-decoration: none;
+		color:rgb(237,28,36);
+	}
+	.textbox{
+		display: inline-block;
+		position: relative;
+		font-family: helvetica;
+		text-align: left;
+		/*top:140px;*/
+		top:10%;
+		font-size: 25pt;
+		width:610px;
+		height:800px;
+	}
+	.textbox span{
+		color:white;
+		background: red;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	.circle{
+		z-index: 1;
+		margin-left: 70px;
+		position: absolute;
+		display: inline-block;
+		background-color: rgb(237,28,36);
+		width:200px;
+		height:200px;
+		border-radius: 50%;
+		text-align: center;
+	}
+	.textcircle a{
+		text-decoration: none;
+		color:white;
+		
+	}
+	.textcircle{
+		top:30px;
+		position: relative;
+		font-family: helvetica;
+		font-weight: bold;
+		font-size: 90pt;
+		color:white;
+		-webkit-transform: rotate(-45deg);
+	}
+		.textcircle3 a{
+		text-decoration: none;
+		color:white;
+	}
+
+	.textcircle3{
+		margin-top: 206px;
+		font-weight: bold;
+		top:-150px;
+		color:white;
+		position: relative;
+		font-family: helvetica;
+		font-size: 56pt;
+		-webkit-transform: rotate(-45deg);
+	}
+	.textcircle3{
+		margin-top: 206px;
+		font-weight: bold;
+		top:-150px;
+		color:white;
+		position: relative;
+		font-family: helvetica;
+		font-size: 56pt;
+		-webkit-transform: rotate(-45deg);
+	}
+	.textcircle.set span{
+		margin-top: -20px;
+		margin-left:90px;
+		display: block;
+		font-size:25pt;
+		text-align: left;
+	}
+	.textcircle.set2 a{
+		text-decoration: none;
+		color:white;
+	}
+	.textcircle.set2 span{
+		margin-top: -10px;
+		margin-left:60px;
+		display: block;
+		font-size:20pt;
+		text-align: left;
+	}
+	.textcircle3.set3 span{
+		margin-top: -10px;
+		margin-left:60px;
+		display: block;
+		font-size:20pt;
+		text-align: left;
+	}
+
+
+/*SECTION A*/
+	.containerboxA{
+		top:10%;
+		left:10%;
+		background-color: yellow;
+		width: 80%;
+		height:80%;
+		text-align: left;
+		position:absolute;
+	}
+	.contentboxA a{
+		text-decoration: none;
+		color:red;
+		/*margin-right: 300px;*/
+
+	}
+	.contentboxA{
+		display: block;
+		position: relative;
+		font-family: helvetica;
+		text-align: left;
+		top:5%;
+		font-size: 25pt;
+		width:250px;
+		height:900px;
+		margin: 5 1px;
+
+	}
+	.sectionA a:hover{
+		color:white;
+	}
+	.sectionA{
+		position: relative;
+		display: inline-block;
+		font-weight: normal;
+		font-size: 24pt;
+		top:130px;
+		padding-top: 20px;
+		padding-left: 190px;
+		margin: -2px 4px;
+		width:800px;
+	}
+	.textboxA a{
+		text-decoration: none;
+		color:rgb(237,28,36);
+	}
+	.textboxA{
+
+		/*position: relative;*/
+		display: block;
+		font-family: helvetica;
+		color:black;
+		text-align: left;
+		margin-top:-76%;
+		margin-left: 198px;
+		font-size: 25pt;
+		width:700px;
+		height:800px;
+	}
+
+
+/*SECTION B*/
+.textboxB a{
+	text-decoration: none;
+	color: black;
+}
+
+.textboxB{
+	display: inline-block;
+	position: relative;
+	font-family: helvetica;
+	text-align: left;
+	/*top:140px;*/
+	top:10%;
+	font-size: 95pt;
+	width:610px;
+	height:800px;
+}

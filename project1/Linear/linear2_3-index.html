@@ -1,0 +1,38 @@
+<doctype html>
+<head>
+	<title>BuzzFeed Linear</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="block B">
+		<div class="container B">
+			<!-- <div class="content C">
+				5 People
+			</div> -->
+
+
+		<div id="wrap">
+    	<div id="content-C"><a href="linear2_4-index.html"><span>5</span> People </a></div>
+    	<div id="text-C">
+    	2012 we were five people crammed into two small rooms in Culver City sharing a single camera. Today, we are a team of over 160 employees on our 4-acre Hollywood campus, 25,000 square feet of which is dedicated to production. When we started, we experimented with new short video formats and uploaded them to a single channel on YouTube. Today we distribute roughly 50 videos each week to more than 20 platforms and portals around the world. Our content ranges from medium length to short form to shorter-than-short form, from scripted and unscripted recurring series to expanding character universes, from animated to live action, and soon feature-length film. We have become a vibrant, energetic hub for innovation in media and for the incubation of talent.
+    </div>
+</div>
+</div>
+
+		</div>
+	</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js">
+</script>
+<script>
+$ (document).ready(function(){
+  $("#wrap").mouseover(function(){
+   $("#text-C").stop().slideDown("slow");
+  });
+  $("#wrap").mouseout(function(){
+   $("#text-C").slideUp("slow");
+  });
+ });
+</script>
+
