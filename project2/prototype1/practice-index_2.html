@@ -1,0 +1,52 @@
+<doctype html>
+<head>
+		<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="layer" id="source_one"></div>
+		<video autoplay id="portrait" controls loop>
+
+		<source src="video_one.mp4" type="video/mp4"</video>
+
+		<source id="firstVideo" src="event_bw-title.mp4" type="video/mp4" onclick=diffVideo(this) />
+	
+	<div class="layer_two" id="source_three"></div>
+	<video autoplay id="event" controls loop>
+
+		<source src="event_bw-title.mp4" type="video/mp4"</video>
+
+		<sourcesrc="Feet.mp4" type="video/mp4" onclick=diffVideo(this) />
+
+</div>
+
+
+
+	<div class="box">
+		<div class="front" id="source_two"></div>
+			
+			<video autoplay id="portrait-top" control loop>
+
+			<source src="video_one.mp4" type="video/mp4"</video>
+
+		<!-- 	<source src="event_bww-time.mp4" type="video/mp4" onclick=diffVideo(this) /> -->
+
+
+	</div>
+
+
+
+</body>
+<script>
+function changeVideo(new_video)
+var portrait = document.getElementById("portrait"); portrait.firstChild.nodeValue= new_video;   
+ 
+ document.getElementById('source_three').addEventListener('click', function() {
+    document.getElementById('source_video').src = 'Feet.mp4';
+  });
+
+document.getElementById('source_two').addEventListener('click', function() {
+    document.getElementById('portrait-top').src = 'event_bww-time.mp4';
+  });
+</script>
