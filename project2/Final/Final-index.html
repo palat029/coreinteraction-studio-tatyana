@@ -1,0 +1,53 @@
+
+<!doctype html>
+
+<head>
+<!-- 	[large-assets] gitl lfs track '*.mp4' -->
+		<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="layer" id="one">
+		<video autoplay loop>
+			<source src="video_one.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	<div class="layer" id="two">
+		<div class="layerTTWO"></div>
+			<video id="front" autoplay loop>
+				<source src="video_one.mp4" type="video/mp4">
+			</video>
+
+	</div>
+	<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+	<script>
+
+		$(function() {
+
+			var layerOneIndex = 0;
+			var layerOneVideos = ['video_one.mp4', 'video_two.mp4', 'video_three.mp4', 'video_four.mp4', 'video_five.mp4', 'video_six.mp4','video_seven.mp4']; // replace these with the filenames of your videos
+
+			$("#one video").click(function() {
+				layerOneIndex++;
+				if(layerOneIndex >= layerOneVideos.length) {
+					layerOneIndex = 0;
+				}
+				$(this).attr("src", layerOneVideos[layerOneIndex]);
+			});
+
+			var layerTwoIndex = 0;
+			var layerTwoVideos = ['video_one.mp4', 'video_twoText.mp4', 'video_threeText.mp4','video_fourText.mp4', 'video_fiveText.mp4','video_sixText.mp4','video_sevenText.mp4']; // replace these with the filenames of your videos
+
+			$("#two video").click(function() {
+				layerTwoIndex++;
+				if(layerTwoIndex >= layerTwoVideos.length) {
+					layerTwoIndex = 0;
+				}
+				$(this).attr("src", layerTwoVideos[layerTwoIndex]);
+			});
+
+		});
+
+	</script>
+</body>
+</html>
