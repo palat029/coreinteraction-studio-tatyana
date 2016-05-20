@@ -1,0 +1,36 @@
+<doctype html>
+<head>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+<div class="container">
+	<video autoplay id="v1" >
+	  <source src="boxx.mp4" type="video/mp4">
+	  <!-- <source src="needles.ogg" type="video/ogg"> -->
+	</video> 
+
+	<div id="element_1"><h1> LIVE EVENT</h1> <p> Guest Lecture will come and talk about the importance of walking and and how walking changed his life. <br> Time: 7:00pm - 8:00pm <br> Food and Drinks will be served</div>
+<div>
+
+
+</body>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js">
+</script>
+<script>
+$(document).ready(function() {
+    $("#element_1").hide(); 
+document.getElementById('v1').addEventListener("timeupdate", function() {
+    if(this.currentTime > 35) {
+$("#element_1").show()
+    }
+});
+});
+and
+</script>
