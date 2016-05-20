@@ -1,0 +1,50 @@
+.container{
+    top:0;
+    left:0;
+	width: 100%;
+	height:100%;
+	position: absolute;
+
+}
+
+#Legs{
+	top:0;
+    left:0;
+    position: relative;
+    display: fixed;
+    min-width:100%;
+    min-height:100%;
+/*    border:solid 2em #00ebb3;
+*/
+}
+
+#element_1{
+	font-family: Tahoma;
+	font-size: 42pt;
+	color:#00ebb3;
+	position: fixed;
+	z-index:1;
+	display: inline-block;
+	top:-10;
+	left: 10%;
+	/*border:solid 10px #00ebb3;*/
+}
+.border{
+	border:solid 10px #00ebb3;
+	width: 93%;
+	height:90%;
+	display: inline-block;
+	position: fixed;
+	z-index: 1;
+	top:40;
+	left:60;
+
+}
+.border:hover{
+	border:solid 10px #f9fe44;
+
+}
+#element_1 p{
+	margin-top:-25;
+	color:white;
+}
